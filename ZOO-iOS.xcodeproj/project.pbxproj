@@ -11,9 +11,7 @@
 		B452A7452A36B536006C16FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7442A36B536006C16FA /* SceneDelegate.swift */; };
 		B452A7472A36B536006C16FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7462A36B536006C16FA /* MainViewController.swift */; };
 		B452A74C2A36B536006C16FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B452A74B2A36B536006C16FA /* Assets.xcassets */; };
-		B452A75A2A36B536006C16FA /* ZOO_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7592A36B536006C16FA /* ZOO_iOSTests.swift */; };
-		B452A7642A36B536006C16FA /* ZOO_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7632A36B536006C16FA /* ZOO_iOSUITests.swift */; };
-		B452A7662A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7652A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift */; };
+		B452A7762A37594D006C16FA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B452A7752A37594D006C16FA /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +39,8 @@
 		B452A74B2A36B536006C16FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B452A7502A36B536006C16FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B452A7552A36B536006C16FA /* ZOO-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZOO-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B452A7592A36B536006C16FA /* ZOO_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOO_iOSTests.swift; sourceTree = "<group>"; };
 		B452A75F2A36B536006C16FA /* ZOO-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZOO-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B452A7632A36B536006C16FA /* ZOO_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOO_iOSUITests.swift; sourceTree = "<group>"; };
-		B452A7652A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOO_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B452A7752A37594D006C16FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +71,8 @@
 		B452A7362A36B536006C16FA = {
 			isa = PBXGroup;
 			children = (
+				B452A7752A37594D006C16FA /* .swiftlint.yml */,
 				B452A7412A36B536006C16FA /* ZOO-iOS */,
-				B452A7582A36B536006C16FA /* ZOO-iOSTests */,
-				B452A7622A36B536006C16FA /* ZOO-iOSUITests */,
 				B452A7402A36B536006C16FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,23 +97,6 @@
 				B452A7502A36B536006C16FA /* Info.plist */,
 			);
 			path = "ZOO-iOS";
-			sourceTree = "<group>";
-		};
-		B452A7582A36B536006C16FA /* ZOO-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				B452A7592A36B536006C16FA /* ZOO_iOSTests.swift */,
-			);
-			path = "ZOO-iOSTests";
-			sourceTree = "<group>";
-		};
-		B452A7622A36B536006C16FA /* ZOO-iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B452A7632A36B536006C16FA /* ZOO_iOSUITests.swift */,
-				B452A7652A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift */,
-			);
-			path = "ZOO-iOSUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B452A7762A37594D006C16FA /* .swiftlint.yml in Resources */,
 				B452A74C2A36B536006C16FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +228,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B452A7722A36F60F006C16FA /* SwiftLint Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -282,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B452A75A2A36B536006C16FA /* ZOO_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B452A7642A36B536006C16FA /* ZOO_iOSUITests.swift in Sources */,
-				B452A7662A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
