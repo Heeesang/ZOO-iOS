@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		B452A7432A36B536006C16FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7422A36B536006C16FA /* AppDelegate.swift */; };
 		B452A7452A36B536006C16FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7442A36B536006C16FA /* SceneDelegate.swift */; };
-		B452A7472A36B536006C16FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7462A36B536006C16FA /* ViewController.swift */; };
-		B452A74A2A36B536006C16FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B452A7482A36B536006C16FA /* Main.storyboard */; };
+		B452A7472A36B536006C16FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7462A36B536006C16FA /* MainViewController.swift */; };
 		B452A74C2A36B536006C16FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B452A74B2A36B536006C16FA /* Assets.xcassets */; };
-		B452A74F2A36B536006C16FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B452A74D2A36B536006C16FA /* LaunchScreen.storyboard */; };
 		B452A75A2A36B536006C16FA /* ZOO_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7592A36B536006C16FA /* ZOO_iOSTests.swift */; };
 		B452A7642A36B536006C16FA /* ZOO_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7632A36B536006C16FA /* ZOO_iOSUITests.swift */; };
 		B452A7662A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A7652A36B536006C16FA /* ZOO_iOSUITestsLaunchTests.swift */; };
@@ -39,10 +37,8 @@
 		B452A73F2A36B536006C16FA /* ZOO-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZOO-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B452A7422A36B536006C16FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B452A7442A36B536006C16FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B452A7462A36B536006C16FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B452A7492A36B536006C16FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B452A7462A36B536006C16FA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B452A74B2A36B536006C16FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B452A74E2A36B536006C16FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B452A7502A36B536006C16FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B452A7552A36B536006C16FA /* ZOO-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZOO-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B452A7592A36B536006C16FA /* ZOO_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOO_iOSTests.swift; sourceTree = "<group>"; };
@@ -101,10 +97,8 @@
 			children = (
 				B452A7422A36B536006C16FA /* AppDelegate.swift */,
 				B452A7442A36B536006C16FA /* SceneDelegate.swift */,
-				B452A7462A36B536006C16FA /* ViewController.swift */,
-				B452A7482A36B536006C16FA /* Main.storyboard */,
+				B452A7462A36B536006C16FA /* MainViewController.swift */,
 				B452A74B2A36B536006C16FA /* Assets.xcassets */,
-				B452A74D2A36B536006C16FA /* LaunchScreen.storyboard */,
 				B452A7502A36B536006C16FA /* Info.plist */,
 			);
 			path = "ZOO-iOS";
@@ -134,6 +128,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B452A7692A36B536006C16FA /* Build configuration list for PBXNativeTarget "ZOO-iOS" */;
 			buildPhases = (
+				B452A7722A36F60F006C16FA /* SwiftLint Script */,
 				B452A73B2A36B536006C16FA /* Sources */,
 				B452A73C2A36B536006C16FA /* Frameworks */,
 				B452A73D2A36B536006C16FA /* Resources */,
@@ -231,9 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B452A74F2A36B536006C16FA /* LaunchScreen.storyboard in Resources */,
 				B452A74C2A36B536006C16FA /* Assets.xcassets in Resources */,
-				B452A74A2A36B536006C16FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +246,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B452A7722A36F60F006C16FA /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B452A73B2A36B536006C16FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B452A7472A36B536006C16FA /* ViewController.swift in Sources */,
+				B452A7472A36B536006C16FA /* MainViewController.swift in Sources */,
 				B452A7432A36B536006C16FA /* AppDelegate.swift in Sources */,
 				B452A7452A36B536006C16FA /* SceneDelegate.swift in Sources */,
 			);
@@ -295,25 +309,6 @@
 			targetProxy = B452A7602A36B536006C16FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B452A7482A36B536006C16FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B452A7492A36B536006C16FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B452A74D2A36B536006C16FA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B452A74E2A36B536006C16FA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B452A7672A36B536006C16FA /* Debug */ = {
@@ -442,7 +437,6 @@
 				INFOPLIST_FILE = "ZOO-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +464,6 @@
 				INFOPLIST_FILE = "ZOO-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
