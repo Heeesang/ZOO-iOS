@@ -1,3 +1,3 @@
 excluded:
-  - ZOO-iOS/AppDelegate.swift
-  - ZOO-iOS/SceneDelegate.swift
+  - ZOO-iOS/Source/App/AppDelegate.swift
+  - ZOO-iOS/Source/App/SceneDelegate.swift
