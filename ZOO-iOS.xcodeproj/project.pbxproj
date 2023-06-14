@@ -20,6 +20,11 @@
 		B4BEE7D92A38B377002B77A0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7D82A38B377002B77A0 /* BaseVC.swift */; };
 		B4BEE7DC2A38B3E3002B77A0 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7DB2A38B3E3002B77A0 /* BaseVM.swift */; };
 		B4BEE7DE2A38B448002B77A0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7DD2A38B448002B77A0 /* MainViewModel.swift */; };
+		B4BEE7E52A38B670002B77A0 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7E42A38B670002B77A0 /* UIViewExt.swift */; };
+		B4BEE7EB2A38CAAB002B77A0 /* 144103-e-v-e.json in Resources */ = {isa = PBXBuildFile; fileRef = B4BEE7EA2A38CAAB002B77A0 /* 144103-e-v-e.json */; };
+		B4BEE7F42A393877002B77A0 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7F32A393877002B77A0 /* GradientButton.swift */; };
+		B4BEE7F62A393AD7002B77A0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7F52A393AD7002B77A0 /* ListViewController.swift */; };
+		B4BEE7F92A393B0C002B77A0 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7F82A393B0C002B77A0 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,12 @@
 		B4BEE7D82A38B377002B77A0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		B4BEE7DB2A38B3E3002B77A0 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		B4BEE7DD2A38B448002B77A0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B4BEE7E42A38B670002B77A0 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		B4BEE7EA2A38CAAB002B77A0 /* 144103-e-v-e.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "144103-e-v-e.json"; path = "../../../../../Downloads/144103-e-v-e.json"; sourceTree = "<group>"; };
+		B4BEE7EC2A38CAAE002B77A0 /* 144103-e-v-e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "144103-e-v-e.json"; sourceTree = "<group>"; };
+		B4BEE7F32A393877002B77A0 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		B4BEE7F52A393AD7002B77A0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B4BEE7F82A393B0C002B77A0 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B452A7752A37594D006C16FA /* .swiftlint.yml */,
-				B452A7412A36B536006C16FA /* ZOO-iOS */,
+				B452A7412A36B536006C16FA /* Project */,
 				B452A7402A36B536006C16FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,15 +114,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B452A7412A36B536006C16FA /* ZOO-iOS */ = {
+		B452A7412A36B536006C16FA /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEE7E62A38B70B002B77A0 /* Support */,
 				B4BEE7D32A38B340002B77A0 /* Resource */,
 				B4BEE7D22A38B312002B77A0 /* Source */,
-				B452A74B2A36B536006C16FA /* Assets.xcassets */,
-				B452A7502A36B536006C16FA /* Info.plist */,
 			);
-			path = "ZOO-iOS";
+			path = Project;
 			sourceTree = "<group>";
 		};
 		B4BEE7D22A38B312002B77A0 /* Source */ = {
@@ -126,6 +136,8 @@
 		B4BEE7D32A38B340002B77A0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEE7EC2A38CAAE002B77A0 /* 144103-e-v-e.json */,
+				B452A74B2A36B536006C16FA /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -142,6 +154,8 @@
 		B4BEE7D52A38B354002B77A0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEE7EE2A393565002B77A0 /* List */,
+				B4BEE7E12A38B60D002B77A0 /* Util */,
 				B4BEE7DA2A38B37C002B77A0 /* Main */,
 				B4BEE7D62A38B35F002B77A0 /* Base */,
 			);
@@ -160,10 +174,101 @@
 		B4BEE7DA2A38B37C002B77A0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B452A7462A36B536006C16FA /* MainViewController.swift */,
-				B4BEE7DD2A38B448002B77A0 /* MainViewModel.swift */,
+				B4BEE7F22A393861002B77A0 /* View */,
+				B4BEE7E02A38B545002B77A0 /* VM */,
+				B4BEE7DF2A38B540002B77A0 /* VC */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B4BEE7DF2A38B540002B77A0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B452A7462A36B536006C16FA /* MainViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B4BEE7E02A38B545002B77A0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7DD2A38B448002B77A0 /* MainViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		B4BEE7E12A38B60D002B77A0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7E22A38B63D002B77A0 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B4BEE7E22A38B63D002B77A0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7E32A38B656002B77A0 /* UIView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B4BEE7E32A38B656002B77A0 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7E42A38B670002B77A0 /* UIViewExt.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B4BEE7E62A38B70B002B77A0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B452A7502A36B536006C16FA /* Info.plist */,
+				B4BEE7EA2A38CAAB002B77A0 /* 144103-e-v-e.json */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B4BEE7EE2A393565002B77A0 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7F12A39357B002B77A0 /* View */,
+				B4BEE7F02A393576002B77A0 /* VM */,
+				B4BEE7EF2A393570002B77A0 /* VC */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		B4BEE7EF2A393570002B77A0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7F52A393AD7002B77A0 /* ListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B4BEE7F02A393576002B77A0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7F82A393B0C002B77A0 /* ListViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		B4BEE7F12A39357B002B77A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4BEE7F22A393861002B77A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7F32A393877002B77A0 /* GradientButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +391,7 @@
 			files = (
 				B452A7762A37594D006C16FA /* .swiftlint.yml in Resources */,
 				B452A74C2A36B536006C16FA /* Assets.xcassets in Resources */,
+				B4BEE7EB2A38CAAB002B77A0 /* 144103-e-v-e.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,9 +438,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BEE7F92A393B0C002B77A0 /* ListViewModel.swift in Sources */,
+				B4BEE7E52A38B670002B77A0 /* UIViewExt.swift in Sources */,
+				B4BEE7F42A393877002B77A0 /* GradientButton.swift in Sources */,
 				B452A7472A36B536006C16FA /* MainViewController.swift in Sources */,
 				B452A7432A36B536006C16FA /* AppDelegate.swift in Sources */,
 				B452A7452A36B536006C16FA /* SceneDelegate.swift in Sources */,
+				B4BEE7F62A393AD7002B77A0 /* ListViewController.swift in Sources */,
 				B4BEE7D92A38B377002B77A0 /* BaseVC.swift in Sources */,
 				B4BEE7DC2A38B3E3002B77A0 /* BaseVM.swift in Sources */,
 				B4BEE7DE2A38B448002B77A0 /* MainViewModel.swift in Sources */,
@@ -494,7 +604,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F83UCL3G4C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ZOO-iOS/Info.plist";
+				INFOPLIST_FILE = Project/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -521,7 +631,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F83UCL3G4C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ZOO-iOS/Info.plist";
+				INFOPLIST_FILE = Project/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
