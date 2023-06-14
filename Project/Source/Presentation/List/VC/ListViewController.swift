@@ -57,9 +57,9 @@ class ListViewController: BaseVC<ListViewModel> {
 
     private func loadData() {
         let newMatchList = [
-            MatchInfo(firstPlayer: "오종진", secondPlayer: "박서준", event: "축구 ⚽️", schedule: "456"),
-            MatchInfo(firstPlayer: "강민제", secondPlayer: "김도현", event: "배드민턴 🏸", schedule: "789"),
-            MatchInfo(firstPlayer: "정은성", secondPlayer: "백혜인", event: "배구 🏐", schedule: "789")
+            MatchInfo(firstPlayer: "오종진", secondPlayer: "박서준", event: "축구 ⚽️", schedule: "2023-06-11 06:11 pm"),
+            MatchInfo(firstPlayer: "강민제", secondPlayer: "김도현", event: "배드민턴 🏸", schedule: "2023-06-11 06:11 pm"),
+            MatchInfo(firstPlayer: "정은성", secondPlayer: "백혜인", event: "배구 🏐", schedule: "2023-06-11 06:11 pm")
         ]
 
         viewModel.updateSchoolList(match: newMatchList)

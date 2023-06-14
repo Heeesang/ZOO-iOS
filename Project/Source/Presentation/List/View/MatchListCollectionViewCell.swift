@@ -111,6 +111,7 @@ final class MatchListCollectionViewCell: BaseCollectionViewCell<MatchInfo> {
             self.matchEventLabel.text = model[0].event
             self.firstPlayerCardView.playerNameLabel.text = model[0].firstPlayer
             self.secondPlayerCardView.playerNameLabel.text = model[0].secondPlayer
+            self.matchDateLabel.text = model[0].schedule
         }
     }
 }
