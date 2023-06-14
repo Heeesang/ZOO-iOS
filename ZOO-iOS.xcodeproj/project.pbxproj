@@ -25,6 +25,11 @@
 		B4BEE7F42A393877002B77A0 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7F32A393877002B77A0 /* GradientButton.swift */; };
 		B4BEE7F62A393AD7002B77A0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7F52A393AD7002B77A0 /* ListViewController.swift */; };
 		B4BEE7F92A393B0C002B77A0 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7F82A393B0C002B77A0 /* ListViewModel.swift */; };
+		B4BEE7FF2A393D53002B77A0 /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE7FE2A393D53002B77A0 /* UILabelExt.swift */; };
+		B4BEE8022A394166002B77A0 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8012A394166002B77A0 /* MatchModel.swift */; };
+		B4BEE8042A3957A8002B77A0 /* MatchListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8032A3957A8002B77A0 /* MatchListCollectionViewCell.swift */; };
+		B4BEE8062A3957F4002B77A0 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8052A3957F4002B77A0 /* BaseCollectionViewCell.swift */; };
+		B4BEE8082A39DFA6002B77A0 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8072A39DFA6002B77A0 /* ProfileCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		B4BEE7F32A393877002B77A0 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B4BEE7F52A393AD7002B77A0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B4BEE7F82A393B0C002B77A0 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		B4BEE7FE2A393D53002B77A0 /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
+		B4BEE8012A394166002B77A0 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		B4BEE8032A3957A8002B77A0 /* MatchListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4BEE8052A3957F4002B77A0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4BEE8072A39DFA6002B77A0 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,10 +164,11 @@
 		B4BEE7D52A38B354002B77A0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B4BEE7EE2A393565002B77A0 /* List */,
-				B4BEE7E12A38B60D002B77A0 /* Util */,
-				B4BEE7DA2A38B37C002B77A0 /* Main */,
 				B4BEE7D62A38B35F002B77A0 /* Base */,
+				B4BEE7DA2A38B37C002B77A0 /* Main */,
+				B4BEE7EE2A393565002B77A0 /* List */,
+				B4BEE7FA2A393C45002B77A0 /* Common */,
+				B4BEE7E12A38B60D002B77A0 /* Util */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			children = (
 				B4BEE7D82A38B377002B77A0 /* BaseVC.swift */,
 				B4BEE7DB2A38B3E3002B77A0 /* BaseVM.swift */,
+				B4BEE8052A3957F4002B77A0 /* BaseCollectionViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -174,7 +186,7 @@
 		B4BEE7DA2A38B37C002B77A0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B4BEE7F22A393861002B77A0 /* View */,
+				B4BEE8002A394106002B77A0 /* Model */,
 				B4BEE7E02A38B545002B77A0 /* VM */,
 				B4BEE7DF2A38B540002B77A0 /* VC */,
 			);
@@ -216,6 +228,7 @@
 		B4BEE7E32A38B656002B77A0 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEE7FE2A393D53002B77A0 /* UILabelExt.swift */,
 				B4BEE7E42A38B670002B77A0 /* UIViewExt.swift */,
 			);
 			path = UIView;
@@ -259,16 +272,34 @@
 		B4BEE7F12A39357B002B77A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEE8032A3957A8002B77A0 /* MatchListCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		B4BEE7F22A393861002B77A0 /* View */ = {
+		B4BEE7FA2A393C45002B77A0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE7FB2A393C4C002B77A0 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B4BEE7FB2A393C4C002B77A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B4BEE7F32A393877002B77A0 /* GradientButton.swift */,
+				B4BEE8072A39DFA6002B77A0 /* ProfileCardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B4BEE8002A394106002B77A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE8012A394166002B77A0 /* MatchModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,14 +470,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BEE7F92A393B0C002B77A0 /* ListViewModel.swift in Sources */,
+				B4BEE8062A3957F4002B77A0 /* BaseCollectionViewCell.swift in Sources */,
+				B4BEE8022A394166002B77A0 /* MatchModel.swift in Sources */,
 				B4BEE7E52A38B670002B77A0 /* UIViewExt.swift in Sources */,
 				B4BEE7F42A393877002B77A0 /* GradientButton.swift in Sources */,
 				B452A7472A36B536006C16FA /* MainViewController.swift in Sources */,
+				B4BEE8042A3957A8002B77A0 /* MatchListCollectionViewCell.swift in Sources */,
 				B452A7432A36B536006C16FA /* AppDelegate.swift in Sources */,
 				B452A7452A36B536006C16FA /* SceneDelegate.swift in Sources */,
 				B4BEE7F62A393AD7002B77A0 /* ListViewController.swift in Sources */,
+				B4BEE8082A39DFA6002B77A0 /* ProfileCardView.swift in Sources */,
 				B4BEE7D92A38B377002B77A0 /* BaseVC.swift in Sources */,
 				B4BEE7DC2A38B3E3002B77A0 /* BaseVM.swift in Sources */,
+				B4BEE7FF2A393D53002B77A0 /* UILabelExt.swift in Sources */,
 				B4BEE7DE2A38B448002B77A0 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
