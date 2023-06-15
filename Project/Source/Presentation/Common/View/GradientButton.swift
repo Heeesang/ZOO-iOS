@@ -24,7 +24,7 @@ final class GradientButton: UIButton {
 
     // MARK: - Helpers
     private func configureUI() {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: viewBounds.width/1.4, height: 68))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: viewBounds.width, height: 68))
         let gradient = CAGradientLayer()
 
         gradient.frame = view.bounds

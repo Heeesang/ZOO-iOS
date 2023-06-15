@@ -8,10 +8,13 @@ class ListViewController: BaseVC<ListViewModel> {
 
     private let viewBounds = UIScreen.main.bounds
 
-    private lazy var addMatchButton = UIButton().then {
-        $0.imageView?.contentMode = .scaleAspectFit
-        $0.backgroundColor = .clear
-        $0.setImage(UIImage(systemName: "plus.app"), for: .normal)
+    let matchList = MatchListData.shared.newMatchList
+
+    private lazy var addMatchButton = UIBarButtonItem(image: UIImage(systemName: "plus.app"),
+                                                                     style: .plain,
+                                                                     target: nil,
+                                                                     action: nil).then {
+                        $0.tintColor = .black
     }
 
     private let titleLabel = UILabel().then {
@@ -55,22 +58,16 @@ class ListViewController: BaseVC<ListViewModel> {
         return scaledImage?.withRenderingMode(.alwaysOriginal)
     }
 
-    private func loadData() {
-        let newMatchList = [
-            MatchInfo(firstPlayer: "오종진", secondPlayer: "박서준", event: "축구 ⚽️", schedule: "2023-06-11 06:11 pm"),
-            MatchInfo(firstPlayer: "강민제", secondPlayer: "김도현", event: "배드민턴 🏸", schedule: "2023-06-11 06:11 pm"),
-            MatchInfo(firstPlayer: "정은성", secondPlayer: "백혜인", event: "배구 🏐", schedule: "2023-06-11 06:11 pm")
-        ]
-
-        viewModel.updateSchoolList(match: newMatchList)
+    private func loadData(match: [MatchInfo]) {
+        viewModel.updateSchoolList(match: match)
     }
 
     private func setButtonImage() {
-        if let originalImage = addMatchButton.image(for: .normal) {
-            let scaledImage = scaleImage(originalImage, toSize: CGSize(width: 42, height: 40))
+        if let originalImage = UIImage(systemName: "plus.app") {
+            let scaledImage = scaleImage(originalImage, toSize: CGSize(width: 32, height: 30))
 
             let tintedImage = scaledImage?.withRenderingMode(.alwaysTemplate)
-            addMatchButton.setImage(tintedImage, for: .normal)
+            addMatchButton.image = tintedImage
             addMatchButton.tintColor = .gray
         }
     }
@@ -78,7 +75,7 @@ class ListViewController: BaseVC<ListViewModel> {
     private func addMatchButtonDidTap() {
         addMatchButton.rx.tap
             .bind(with: self) { owner, _ in
-                let nextVC = ListViewController(viewModel: ListViewModel())
+                let nextVC = AddPlayerViewController(viewModel: AddPlayerViewModel())
                 owner.navigationController?.pushViewController(nextVC, animated: true)
             }.disposed(by: disposeBag)
     }
@@ -86,30 +83,23 @@ class ListViewController: BaseVC<ListViewModel> {
     override func configureVC() {
         matchListCollectionView.delegate = self
 
+        navigationController?.navigationBar.isHidden = false
+        navigationItem.titleView = titleLabel
+        navigationItem.rightBarButtonItem = addMatchButton
+
+        addMatchButtonDidTap()
         setButtonImage()
         bindViewModel()
-        loadData()
+        loadData(match: matchList)
     }
 
     override func addView() {
-        view.addSubViews(titleLabel, addMatchButton, matchListCollectionView)
+        view.addSubViews(matchListCollectionView)
     }
 
     override func setLayout() {
-
-        titleLabel.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(10)
-            $0.centerX.equalToSuperview()
-        }
-
-        addMatchButton.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(12)
-            $0.trailing.equalToSuperview().inset(30)
-            $0.size.equalTo(30)
-        }
-
         matchListCollectionView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(80)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(30)
             $0.bottom.equalTo(view.safeAreaLayoutGuide)
             $0.leading.equalTo(view.safeAreaLayoutGuide)
             $0.trailing.equalTo(view.safeAreaLayoutGuide)

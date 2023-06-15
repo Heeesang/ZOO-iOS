@@ -30,6 +30,12 @@
 		B4BEE8042A3957A8002B77A0 /* MatchListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8032A3957A8002B77A0 /* MatchListCollectionViewCell.swift */; };
 		B4BEE8062A3957F4002B77A0 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8052A3957F4002B77A0 /* BaseCollectionViewCell.swift */; };
 		B4BEE8082A39DFA6002B77A0 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8072A39DFA6002B77A0 /* ProfileCardView.swift */; };
+		B4BEE80F2A3A0A7B002B77A0 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE80E2A3A0A7B002B77A0 /* AddPlayerViewController.swift */; };
+		B4BEE8112A3A0AA1002B77A0 /* AddPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8102A3A0AA1002B77A0 /* AddPlayerViewModel.swift */; };
+		B4BEE8132A3A0AEC002B77A0 /* ProfileCardButton .swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8122A3A0AEC002B77A0 /* ProfileCardButton .swift */; };
+		B4BEE8172A3A28E5002B77A0 /* AddMatchInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8162A3A28E5002B77A0 /* AddMatchInfoViewController.swift */; };
+		B4BEE8192A3A2906002B77A0 /* AddMatchInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE8182A3A2906002B77A0 /* AddMatchInfoViewModel.swift */; };
+		B4BEE81C2A3A95DE002B77A0 /* MatchShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEE81B2A3A95DE002B77A0 /* MatchShare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,12 @@
 		B4BEE8032A3957A8002B77A0 /* MatchListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4BEE8052A3957F4002B77A0 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4BEE8072A39DFA6002B77A0 /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
+		B4BEE80E2A3A0A7B002B77A0 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
+		B4BEE8102A3A0AA1002B77A0 /* AddPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewModel.swift; sourceTree = "<group>"; };
+		B4BEE8122A3A0AEC002B77A0 /* ProfileCardButton .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileCardButton .swift"; sourceTree = "<group>"; };
+		B4BEE8162A3A28E5002B77A0 /* AddMatchInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMatchInfoViewController.swift; sourceTree = "<group>"; };
+		B4BEE8182A3A2906002B77A0 /* AddMatchInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMatchInfoViewModel.swift; sourceTree = "<group>"; };
+		B4BEE81B2A3A95DE002B77A0 /* MatchShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchShare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +176,8 @@
 		B4BEE7D52A38B354002B77A0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B4BEE81A2A3A95D1002B77A0 /* Match */,
+				B4BEE8092A3A0A31002B77A0 /* AddMatch */,
 				B4BEE7D62A38B35F002B77A0 /* Base */,
 				B4BEE7DA2A38B37C002B77A0 /* Main */,
 				B4BEE7EE2A393565002B77A0 /* List */,
@@ -290,6 +304,7 @@
 			children = (
 				B4BEE7F32A393877002B77A0 /* GradientButton.swift */,
 				B4BEE8072A39DFA6002B77A0 /* ProfileCardView.swift */,
+				B4BEE8122A3A0AEC002B77A0 /* ProfileCardButton .swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +315,73 @@
 				B4BEE8012A394166002B77A0 /* MatchModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4BEE8092A3A0A31002B77A0 /* AddMatch */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE80B2A3A0A46002B77A0 /* AddMatchInfo */,
+				B4BEE80A2A3A0A3F002B77A0 /* AddPlayer */,
+			);
+			path = AddMatch;
+			sourceTree = "<group>";
+		};
+		B4BEE80A2A3A0A3F002B77A0 /* AddPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE80D2A3A0A58002B77A0 /* VM */,
+				B4BEE80C2A3A0A51002B77A0 /* VC */,
+			);
+			path = AddPlayer;
+			sourceTree = "<group>";
+		};
+		B4BEE80B2A3A0A46002B77A0 /* AddMatchInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE8152A3A242C002B77A0 /* VM */,
+				B4BEE8142A3A2428002B77A0 /* VC */,
+			);
+			path = AddMatchInfo;
+			sourceTree = "<group>";
+		};
+		B4BEE80C2A3A0A51002B77A0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE80E2A3A0A7B002B77A0 /* AddPlayerViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B4BEE80D2A3A0A58002B77A0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE8102A3A0AA1002B77A0 /* AddPlayerViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		B4BEE8142A3A2428002B77A0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE8162A3A28E5002B77A0 /* AddMatchInfoViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B4BEE8152A3A242C002B77A0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE8182A3A2906002B77A0 /* AddMatchInfoViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		B4BEE81A2A3A95D1002B77A0 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEE81B2A3A95DE002B77A0 /* MatchShare.swift */,
+			);
+			path = Match;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,19 +551,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BEE8172A3A28E5002B77A0 /* AddMatchInfoViewController.swift in Sources */,
 				B4BEE7F92A393B0C002B77A0 /* ListViewModel.swift in Sources */,
 				B4BEE8062A3957F4002B77A0 /* BaseCollectionViewCell.swift in Sources */,
 				B4BEE8022A394166002B77A0 /* MatchModel.swift in Sources */,
+				B4BEE81C2A3A95DE002B77A0 /* MatchShare.swift in Sources */,
 				B4BEE7E52A38B670002B77A0 /* UIViewExt.swift in Sources */,
+				B4BEE8192A3A2906002B77A0 /* AddMatchInfoViewModel.swift in Sources */,
 				B4BEE7F42A393877002B77A0 /* GradientButton.swift in Sources */,
 				B452A7472A36B536006C16FA /* MainViewController.swift in Sources */,
+				B4BEE8132A3A0AEC002B77A0 /* ProfileCardButton .swift in Sources */,
 				B4BEE8042A3957A8002B77A0 /* MatchListCollectionViewCell.swift in Sources */,
 				B452A7432A36B536006C16FA /* AppDelegate.swift in Sources */,
 				B452A7452A36B536006C16FA /* SceneDelegate.swift in Sources */,
 				B4BEE7F62A393AD7002B77A0 /* ListViewController.swift in Sources */,
+				B4BEE8112A3A0AA1002B77A0 /* AddPlayerViewModel.swift in Sources */,
 				B4BEE8082A39DFA6002B77A0 /* ProfileCardView.swift in Sources */,
 				B4BEE7D92A38B377002B77A0 /* BaseVC.swift in Sources */,
 				B4BEE7DC2A38B3E3002B77A0 /* BaseVM.swift in Sources */,
+				B4BEE80F2A3A0A7B002B77A0 /* AddPlayerViewController.swift in Sources */,
 				B4BEE7FF2A393D53002B77A0 /* UILabelExt.swift in Sources */,
 				B4BEE7DE2A38B448002B77A0 /* MainViewModel.swift in Sources */,
 			);
